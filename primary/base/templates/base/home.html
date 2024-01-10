@@ -1,0 +1,113 @@
+{% load static %}
+
+<!-- Your HTML content here -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>APEX ACADEMY</title>
+  <style>
+    @font-face {
+      font-family: 'Apex';
+      src: url('{% static 'res/fonts/Apex.otf' %}') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .jumbotron-text {
+      font-family: 'Apex', sans-serif;
+    }
+
+    .card-content {
+      cursor: pointer;
+      text-align: center;
+      border-radius: 15px; 
+    }
+
+    .card-content .card-body.student {
+      background: url('{% static 'res/imgs/ash2.jpg' %}') top center/auto;
+      color: white;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .card-content .card-body.trainer {
+      background: url('{% static 'res/imgs/horizon.jpg' %}') top center/cover ;
+      color: white;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .heading {
+      font-family:'Apex';
+      text-align: center;
+    }
+
+    .pad{
+      margin-bottom: 25px;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: url('{% static 'res/imgs/image(1).jpg' %}') center/contain;
+      color: white;
+    }
+
+    .jumbotron {
+      background: url('{% static 'res/imgs/banner.jpg' %}') center/auto;
+      color: white;
+      text-align: left;
+      padding: 100px 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-4 jumbotron-text">APEX ACADEMY</h1>
+    <p class="lead jumbotron-text">Join the hunt.</p>
+  </div>
+
+  <div class="container pad">
+    <h1 class="heading">JOIN US AS A</h1>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card card-content h-100" onclick="window.location.href='{% url 'curriculum' %}';">
+          <div class="card-body student">
+            <h2 class="card-title heading">Student</h2>
+            <p class="card-text">Embark on a Journey to Gaming Greatness with Apex Legends Academy!
+
+              Elevate your Apex Legends prowess and set the stage for victory! The Apex Legends Academy beckons, offering a unique opportunity to transcend ordinary gameplay and ascend to the echelons of elite players.
+              <br>
+              <h3 class="heading">Forge Your Path to Apex Legends Greatness!</h3>
+              Are you yearning to surpass your limits, outmaneuver opponents, and savor the sweet taste of victory? Look no further! The Apex Legends Academy is your compass on the roadmap to mastery, charted by the very legends who have conquered the gaming arena.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mx-auto">
+        <div class="card card-content h-100" onclick="window.location.href='{% url 'career' %}';">
+
+          <div class="card-body trainer">
+            <h2 class="card-title heading">Trainer</h2>
+            <p class="card-text">Join Apex Legends Academy as a Distinguished Trainer! Elevate the Next Generation of Legends!
+
+              Are you a gaming virtuoso, a maestro in the world of competitive play, or a seasoned streamer with an insatiable desire to nurture the next generation of Apex Legends stars?
+              <h3 class="heading">Shape The future of Apex</h3>
+              Apex Legends Academy is extending an exclusive invitation for trailblazers like you to become the architects of greatness. Join us as we embark on a monumental journey of mentorship, shaping the destiny of tomorrow's Apex Legends champions!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

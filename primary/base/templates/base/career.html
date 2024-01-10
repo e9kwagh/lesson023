@@ -1,0 +1,116 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Careers</title>
+  <style>
+    @font-face {
+      font-family: 'Apex';
+      src: url('{% static 'res/fonts/Apex.otf' %}') format('opentype');
+      font-weight : normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: url('{% static 'res/imgs/trainerbg.jpg' %}') center/cover;
+      color: white;
+    }
+
+    .jumbotron {
+      background: url('{% static 'res/imgs/rev.jpg' %}') center/cover;
+      color: white;
+      text-align: left;
+      padding: 100px 25px;
+    }
+
+    .jumbotron-text {
+      font-family: 'Apex', sans-serif;
+    }
+
+    .card-content {
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .card-content .card-body {
+      background: url('{% static 'res/imgs/ho2.jpg' %}') top center/cover;
+      color: white;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .heading {
+      font-family: 'Apex';
+      text-align: center;
+    }
+
+    .pad {
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-4 jumbotron-text">APEX ACADEMY</h1>
+    <p class="lead jumbotron-text">Join the hunt.</p>
+  </div>
+
+  <div class="container pad">
+    <div class="row">
+      <div class="col-md-9 mx-auto">
+        <div class="card card-content">
+          <div class="card-body">
+            <h2 class="card-title heading">Trainer</h2>
+            <p class="card-text">
+            <h5 class="heading">Why Apex Academy is Your Ultimate Training Ground:</h5>
+            <ul>
+              <li>Global Impact: Expand your influence and shape the global gaming narrative. Your expertise will
+                transcend borders, influencing aspiring players from every corner of the gaming universe.</li>
+              <li>Innovative Strategy Hub: Contribute your cutting-edge strategies and tactics to our dynamic
+                curriclium. Be the avant-garde force that propels the Apex Legends meta forward.</li>
+              <li>United Trainer Community: Collaborate with a league of extraordinary trainers, each bringing a unique
+                set of skills and experiences to the table. Forge alliances, share insights, and be a cornerstone in our
+                united community.</li>
+              <li>Showcase Your Expertise: Unlock exclusive opportunities to showcase your skills through captivating
+                content creation. From live coaching extravaganzas to tutorial series, your brilliance will shine across
+                the gaming cosmos.</li>
+            </ul>
+            <h5 class="heading">Qualities We Seek in Our Trainers:</h5>
+            <ul>
+              <li>Demonstrated Excellence: Cement your legacy with a proven track record as a pro player or streamer,
+                earning your stripes in the gaming arena.</li>
+              <li>Engaging Communicator: Translate your gaming genius into captivating sessions. Your ability to
+                communicate effectively is the key to inspiring the next generation of gaming maestros. </li>
+              <li>Analytical Brilliance: Showcase a profound understanding of game mechanics, meta dynamics, and the
+                knack for simplifying intricate concepts for learners of all skill levels. </li>
+              </ul>
+              <h4 class="heading">Apply Now and Be the Architect of Apex Legends Greatness!</h4>
+              <h6 class="heading">Ready to imprint your legacy on the gaming landscape? Dive into the Trainer Application
+                Form below and become a cornerstone in the legacy of Apex Legends Academy.
+              </h6>
+              </p>
+              <div class="text-center" style="padding-top: 10px;">
+                <a href="{% url 'trainer' %}" class="btn btn-danger btn-lg heading" style="width: 200px;">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  </body>
+  
+  </html>
