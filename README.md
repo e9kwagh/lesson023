@@ -26,15 +26,13 @@ source venv/bin/activate
 pip install ipython) .. if required
 
 **2. Clone the repository**
-
-**3. Go inside the primary folder**.
+Go inside the primary folder.
 run the requirements.txt
 pip install -r requirements.txt
 
-
-**4. cd primary**.
-run the manage.py file using the 
-python manage.py runserver
+**3. cd primary**.
+run the manage.py file using the.
+python manage.py runserver.
 --------------
 Note :-
 `Write steps to run your project in the readme.md file`
