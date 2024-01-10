@@ -20,19 +20,17 @@ Description about the career growth prospects and why join the Academy.
 ### steps to run
 
 **1. create and activate the env**
-python3.8 -m venv venv
+python3.8 -m venv venv  
 source venv/bin/activate
 (pip install --upgrade pip
 pip install ipython) .. if required
 
 **2. Clone the repository**
 Go inside the primary folder.
-run the requirements.txt
-pip install -r requirements.txt
+run the requirements.txt pip install -r requirements.txt
 
 **3. cd primary**
-run the manage.py file using the.
-python manage.py runserver.
+run the manage.py file using the. python manage.py runserver.
 --------------
 Note :-
 `Write steps to run your project in the readme.md file`
