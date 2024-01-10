@@ -17,21 +17,22 @@ Description about Lesson plan/curriculum.
 **5. Career**
 Description about the career growth prospects and why join the Academy.
 
-**steps to follow**
-Steps to run the file
-**create and activate the env**
+## steps to follow.
+**Steps to run the file**
+**1. create and activate the env**
 python3.8 -m venv venv
 source venv/bin/activate
 (pip install --upgrade pip
 pip install ipython) .. if required
 
-**Clone the repository**
+**2. Clone the repository**
 
-Go inside the primary folder.
+**3. Go inside the primary folder**.
 run the requirements.txt
 pip install -r requirements.txt
 
-cd primary
+
+**4. cd primary**.
 run the manage.py file using the 
 python manage.py runserver
 --------------
