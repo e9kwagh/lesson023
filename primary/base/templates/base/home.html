@@ -12,7 +12,7 @@
   <style>
     @font-face {
       font-family: 'Apex';
-      src: url('{% static 'res/fonts/Apex.otf' %}') format('opentype');
+      src: url('{% static "res/fonts/Apex.otf" %}') format('opentype');
       font-weight: normal;
       font-style: normal;
     }
@@ -28,14 +28,14 @@
     }
 
     .card-content .card-body.student {
-      background: url('{% static 'res/imgs/ash2.jpg' %}') top center/auto;
+      background: url('{% static "res/imgs/ash2.jpg" %}') top center/auto;
       color: white;
       border-radius: 15px;
       overflow: hidden;
     }
 
     .card-content .card-body.trainer {
-      background: url('{% static 'res/imgs/horizon.jpg' %}') top center/cover ;
+      background: url('{% static "res/imgs/horizon.jpg" %}') top center/cover ;
       color: white;
       border-radius: 15px;
       overflow: hidden;
@@ -52,15 +52,19 @@
 
     body {
       font-family: sans-serif;
-      background: url('{% static 'res/imgs/image(1).jpg' %}') center/contain;
+      background: url('{% static "res/imgs/image(1).jpg" %}') center/contain;
       color: white;
     }
 
     .jumbotron {
-      background: url('{% static 'res/imgs/banner.jpg' %}') center/auto;
+      background: url('{% static "res/imgs/banner.jpg" %}') center/auto;
       color: white;
       text-align: left;
       padding: 100px 25px;
+    }
+
+    .card-content:hover{
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -76,7 +80,7 @@
     <h1 class="heading">JOIN US AS A</h1>
     <div class="row">
       <div class="col-md-6 mx-auto">
-        <div class="card card-content h-100" onclick="window.location.href='{% url 'curriculum' %}';">
+        <div class="card card-content h-100" onclick="window.location.href='/curriculum';">
           <div class="card-body student">
             <h2 class="card-title heading">Student</h2>
             <p class="card-text">Embark on a Journey to Gaming Greatness with Apex Legends Academy!
@@ -89,7 +93,7 @@
         </div>
       </div>
       <div class="col-md-6 mx-auto">
-        <div class="card card-content h-100" onclick="window.location.href='{% url 'career' %}';">
+        <div class="card card-content h-100" onclick="window.location.href='/career';">
 
           <div class="card-body trainer">
             <h2 class="card-title heading">Trainer</h2>
